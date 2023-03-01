@@ -52,7 +52,7 @@ if __name__ == '__main__':
         print(x_train.shape, x_val.shape, month_label_train.shape, month_label_val.shape, day_label_train.shape,
               day_label_val.shape)
 
-        weight_path = 'weights/pecan' + '_user_' + str(user_id) + '_'
+        weight_path = '/content/drive/MyDrive/synthetic-time-series-smart-grid/weights/pecan' + '_user_' + str(user_id) + '_'
         model = Model(input_dim=2, window_length=96, weight_path=weight_path)
 
         if train:
