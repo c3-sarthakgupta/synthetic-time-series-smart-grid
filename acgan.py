@@ -158,7 +158,7 @@ class ACGAN(object):
             summary_writer.add_scalars('data/mmd_loss', {'load': mmd_loss_vec[0],
                                                          'pv': mmd_loss_vec[1]},
                                        global_step=epoch)
-        self.save_weight()
+        #self.save_weight()
 
     def _generate(self, x):
         return self.generator.predict(x)
